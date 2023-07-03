@@ -9,6 +9,11 @@ html {
     background-color: #B91D50;
 }
 
-.col-4.p-3 {
+.col-8 {
     color: #B91D50;
+}
+
+.generated-container {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }

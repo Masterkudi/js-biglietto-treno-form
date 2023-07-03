@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +9,57 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="title text-center text-white">
+    <div class="title text-center text-white p-3">
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div class="container bg-white d-flex flex-direction-column align-items-center">
+    </div>
+    <form>
+        <div class=" col-8 container bg-white justify-content-center">
             <div class="row">
-                <div class="col-8 m-0 flex-direction-row">
+                <div class="col m-0 p-0 d-flex flex-direction-row">
                     <div class="col-4 p-3">
                         <label for="name_input" class="form-label">Nome Cognome</label>
-                        <input type="text">
+                        <input type="text" class="form-control" name="username" id="name_input">
                     </div>
                     <div class="col-4 p-3">
                         <label for="distance" class="form-label">Km da percorrere</label>
-                        <input type="text">
+                        <input type="text" class="form-control" name="distance" id="distance">
                     </div>
                     <div class="col-4 p-3">
                         <label for="user_age" class="form-label">Fascia d'età</label>
-                        <input type="text">
+                        <input type="text" class="form-control" name="user_age" id="user_age">
                     </div>
                 </div>
             </div>
-
-            <button class="btn btn-secondary pulsante-accedi">Genera</button>
-            <button class="btn btn-secondary pulsante-accedi">Annulla</button>
+            <div class="col text-center m-0 d-flex flex-direction-row justify-content-center ">
+                <button type="submit" class="btn btn-secondary pulsante-accedi p-1 m-2">Genera</button>
+                <button type="reset" class="btn btn-secondary pulsante-accedi p-1 m-2">Annulla</button>
+            </div>
         </div>
-
-        </div>
-    </div>
-    <div class="text-center text-white">
+    </form>
+    <div class="output title text-center text-white p-3">
         <h2>IL TUO BIGLIETTO</h2>
-
+        <div class="container col-8 bg-white justify-content-center">
+            <div class="row">
+                <div class="text-start text-black">
+                    <h2>DETTAGLIO PASSEGGERI</h2>
+                </div>
+                <div class="generated-container col m-4 p-0 d-flex flex-direction-row">
+                    <div class="col-4 bg-secondary">
+                        <label for="name_input" class="form-label text-black">Nome passeggero</label>
+                    </div>
+                    <div class="col-8 text-black">
+                        <label for="distance" class="col-2 text-start form-label">Offerta</label>
+                        <label for="distance" class="col-2 text-start form-label">Carrozza</label>
+                        <label for="distance" class="col-2 text-start form-label">Codice CP</label>
+                        <label for="distance" class="col-2 text-start form-label">Costo biglietto</label>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

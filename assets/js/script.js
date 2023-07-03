@@ -1,5 +1,5 @@
-const userAge = parseInt(('età del passeggero'));
-const distance = parseInt(('distanza da percorrere'));
+const userAge = parseInt(prompt('età del passeggero'));
+const distance = parseInt(prompt('distanza da percorrere'));
 let pricePerKm = 0.21;
 let discount = 0;
 
@@ -21,6 +21,10 @@ else {
 
 const result = price - (price * discount);
 
-const outputDiv = document.getElementById;
+const outputDiv = document.getElementById("output");
 
 outputDiv.innerHTML = result;
+
+const outputDiv = document.getElementById ('nameImput');
+const outputDiv = document.getElementById ('distance');
+const outputDiv = document.getElementById ('userAge');
