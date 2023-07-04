@@ -29,4 +29,9 @@ btnLogin.addEventListener("click", function () {
 
 const result = price - (price * discount);
 
+const outputDiv = document.getElementById("output");
+
+
+
+outputDiv.innerHTML = result;
 
