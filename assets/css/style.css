@@ -9,8 +9,10 @@ html {
     background-color: #B91D50;
 }
 
-.col-8 {
+.col-10.container {
     color: #B91D50;
+    border-radius: 10px;
+
 }
 
 .generated-container {

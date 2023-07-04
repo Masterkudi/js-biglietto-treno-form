@@ -15,12 +15,12 @@
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     </div>
     <form>
-        <div class=" col-8 container bg-white justify-content-center">
+        <div class=" col-10 container bg-white justify-content-center">
             <div class="row">
                 <div class="col m-0 p-0 d-flex flex-direction-row">
                     <div class="col-4 p-3">
                         <label for="name_input" class="form-label">Nome Cognome</label>
-                        <input type="text" class="form-control" name="username" id="name_input">
+                        <input type="text" class="form-control" name="username" id="nameInput">
                     </div>
                     <div class="col-4 p-3">
                         <label for="distance" class="form-label">Km da percorrere</label>
@@ -28,28 +28,28 @@
                     </div>
                     <div class="col-4 p-3">
                         <label for="user_age" class="form-label">Fascia d'età</label>
-                        <input type="text" class="form-control" name="user_age" id="user_age">
+                        <input type="text" class="form-control" name="user_age" id="userAge">
                     </div>
                 </div>
             </div>
             <div class="col text-center m-0 d-flex flex-direction-row justify-content-center ">
-                <button type="submit" class="btn btn-secondary pulsante-accedi p-1 m-2">Genera</button>
-                <button type="reset" class="btn btn-secondary pulsante-accedi p-1 m-2">Annulla</button>
+                <button type="submit" class="btn btn-secondary pulsante-conferma p-1 m-2">Genera</button>
+                <button type="reset" class="btn btn-secondary pulsante-cancella p-1 m-2">Annulla</button>
             </div>
         </div>
     </form>
     <div class="output title text-center text-white p-3">
         <h2>IL TUO BIGLIETTO</h2>
-        <div class="container col-8 bg-white justify-content-center">
+        <div class="container col-9 bg-white justify-content-center">
             <div class="row">
-                <div class="text-start text-black">
-                    <h2>DETTAGLIO PASSEGGERI</h2>
+                <div class="text-start text-black m-4 p-0">
+                    <h3>DETTAGLIO PASSEGGERI</h3>
                 </div>
                 <div class="generated-container col m-4 p-0 d-flex flex-direction-row">
-                    <div class="col-4 bg-secondary">
+                    <div class="col-3 bg-light">
                         <label for="name_input" class="form-label text-black">Nome passeggero</label>
                     </div>
-                    <div class="col-8 text-black">
+                    <div class="col-9 text-black">
                         <label for="distance" class="col-2 text-start form-label">Offerta</label>
                         <label for="distance" class="col-2 text-start form-label">Carrozza</label>
                         <label for="distance" class="col-2 text-start form-label">Codice CP</label>

@@ -1,11 +1,11 @@
-const userAge = parseInt(prompt('età del passeggero'));
-const distance = parseInt(prompt('distanza da percorrere'));
+const nomePasseggero = document.getElementById("nameInput");
+const distanzaDaPercorrere = document.getElementById("distance");
+const etaDelPasseggero = document.getElementById("userAge");
+
 let pricePerKm = 0.21;
 let discount = 0;
 
 let price = pricePerKm * distance;
-
-
 
 if (userAge < 18) {
     discount = 0.2;
@@ -19,12 +19,14 @@ else {
     console.log('Hai il prezzo base');
 }
 
+const btnLogin = document.querySelector(".pulsante-conferma");
+
+btnLogin.addEventListener("click", function () {
+
+    
+  // Codice che verrà eseguito SOLO quando l'utente clicca sul pulsante 
+})
+
 const result = price - (price * discount);
 
-const outputDiv = document.getElementById("output");
 
-outputDiv.innerHTML = result;
-
-const outputDiv = document.getElementById ('nameImput');
-const outputDiv = document.getElementById ('distance');
-const outputDiv = document.getElementById ('userAge');
